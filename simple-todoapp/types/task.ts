@@ -1,4 +1,4 @@
 export interface ITask {
   id: string;
-  tesxt: string;
+  text: string;
 }
