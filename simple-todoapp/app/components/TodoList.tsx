@@ -1,15 +1,15 @@
 import { ITask } from "@/types/task";
 import React from "react";
 import Task from "./Task";
-
 interface TodoListProps {
   tasks: ITask[];
 }
 
 const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
+  console.log("tasks: ", tasks);
   return (
     <div className="overflow-x-auto">
-      <table className="table table-xs">
+      <table className="table w-full">
         <thead>
           <tr>
             <th>Tasks</th>
