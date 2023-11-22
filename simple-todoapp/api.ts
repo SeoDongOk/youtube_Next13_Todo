@@ -16,4 +16,6 @@ export const addTodo = async (todo: ITask): Promise<ITask> => {
     },
     body: JSON.stringify(todo),
   });
+  const newTodo = await res.json();
+  return newTodo;
 };
