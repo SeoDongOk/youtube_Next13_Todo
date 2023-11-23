@@ -1,5 +1,5 @@
 {
-  "task": [
+  "tasks": [
     {
       "id": "1",
       "text": "buy milk with some orange"
@@ -7,6 +7,10 @@
     {
       "id": "2",
       "text": "help my friend to find a girls"
+    },
+    {
+      "id": "3",
+      "text": "go gym"
     }
   ]
 }

@@ -15,6 +15,7 @@ const AddTeask = () => {
       text: newTaskValue,
     });
     setNewTaskValue("");
+    setModalOpen(false);
   };
   return (
     <div>
