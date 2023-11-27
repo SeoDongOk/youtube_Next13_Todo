@@ -12,7 +12,12 @@ const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
       <div>
         <h3>경제 지표 뷰</h3>
         <table className="table w-full">
-          <thead></thead>
+          <thead>
+            <th>지표명</th>
+            <th>예측가</th>
+            <th>이전 지표 값</th>
+            <th>현재값</th>
+          </thead>
         </table>
       </div>
       <table className="table w-full">
