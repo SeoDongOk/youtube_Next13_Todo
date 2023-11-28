@@ -18,6 +18,12 @@ const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
             <th>이전 지표 값</th>
             <th>현재값</th>
           </thead>
+          <tbody>
+            {tasks.map((task) => (
+              <Task key={task.id} task={task} />
+            ))}
+          </tbody>
+          ㅗㄴ
         </table>
       </div>
       <table className="table w-full">
