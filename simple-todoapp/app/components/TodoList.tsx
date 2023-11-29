@@ -10,21 +10,7 @@ const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
   return (
     <div className="overflow-x-auto">
       <div>
-        <h3>경제 지표 뷰</h3>
-        <table className="table w-full">
-          <thead>
-            <th>지표명</th>
-            <th>예측가</th>
-            <th>이전 지표 값</th>
-            <th>현재값</th>
-          </thead>
-          <tbody>
-            {tasks.map((task) => (
-              <Task key={task.id} task={task} />
-            ))}
-          </tbody>
-          ㅗㄴ
-        </table>
+        <h3>FedWatch</h3>
       </div>
       <table className="table w-full">
         <thead>
