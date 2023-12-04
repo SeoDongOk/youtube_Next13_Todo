@@ -6,7 +6,6 @@ interface TodoListProps {
 }
 
 const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
-  console.log("tasks: ", tasks);
   return (
     <div className="overflow-x-auto">
       <div>
