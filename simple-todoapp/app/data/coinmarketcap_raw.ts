@@ -9,6 +9,8 @@ function coinmarketcap_raw() {
   // if (api_key === "") {
   //   throw new Error("Not Api key in CoinMarketCap");
   // }
+
+  //from CoinDesk Web
   const raw_Data = async () => {
     const btc_raw = await axios.get(
       "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/market-pairs/latest?slug=bitcoin&start=1&limit=10&category=spot&centerType=all&sort=cmc_rank_advanced&direction=desc&spotUntracked=true"
