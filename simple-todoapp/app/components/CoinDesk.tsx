@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import coinmarketcap_raw from "../data/coinmarketcap_raw";
+import coinNews_raw from "../data/coinNews_raw";
 
 interface CoinMarketCap_Price_Array {
   btc: any;
@@ -7,9 +8,10 @@ interface CoinMarketCap_Price_Array {
 }
 
 async function CoinDesk() {
-  const [priceChange, setPriceChange] = useState<CoinMarketCap_Price_Array[]>(
-    []
-  );
+  // coinNews_raw();
+  // const [priceChange, setPriceChange] = useState<CoinMarketCap_Price_Array[]>(
+  //   []
+  // );
   const Price_Array = await coinmarketcap_raw();
 
   console.log(
@@ -21,10 +23,9 @@ async function CoinDesk() {
   if (Price_Array !== undefined) {
     btc_price = Price_Array[0].btc;
     eth_price = Price_Array[0].eth;
-    setTimeout(() => {
-      setPriceChange(Price_Array);
-    }, 1000);
-
+    // setTimeout(() => {
+    //   setPriceChange(Price_Array);
+    // }, 1000);
     return (
       <div className=" m-auto, text-center">
         <h3>BTC/USDT : ${btc_price}</h3>
