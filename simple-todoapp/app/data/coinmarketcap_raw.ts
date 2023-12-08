@@ -32,7 +32,6 @@ function coinmarketcap_raw() {
       ];
     }
   };
-  console.log("here");
   return raw_Data();
 }
 
